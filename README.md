@@ -2,8 +2,7 @@
 
 Things to review:
 
- * Community Size
- * Project liveness (issue count, progress metrics, something)
+ * Community Size & Project Liveness
  * Editor Support
  * Node Support
  * React Support
@@ -19,18 +18,27 @@ Things to review:
  * Create npm modules and export declarations for it
  * Support for third party libraries (declarations files)
  
-### Community Size
+### Community Size & Project Liveness
 
-Stars:
- - TS:   15000 stars
- - FLOW:  8000 stars
+|  | Typescript |  Flow |
+| --- | --- | --- |
+| Github :star: | 15k | 8k |
+| Githuf :fork: | 2.000 | 600 |
+| Compiler Lang | typescript | ocaml |
+| Code Frequency | [very active](https://github.com/Microsoft/TypeScript/graphs/code-frequency) | [not so active](https://github.com/facebook/flow/graphs/code-frequency) |
+| npm downloads| 2 million | 130k |
 
-### Project Liveness
+**typescript community is quite larger than flow.** This is an important aspect, since we expect more releases, better support, better tooling thanks to this.
 
-\# of open issues in github:
-  - TS:   1269
-  - FLOW: 732
+### Editor Support 
 
+**typescript wins here by far.**
+
+ * It has native support in *vs code* from microsoft.
+ * It has really great support in atom with https://atom.io/packages/atom-typescript
+ * It has also great support in Webstorm
+ 
+While for flow, you have a few plugins in atom and webstorm is adding support for release 2016.3 (unreleased yet)
 
 ### React support
 
