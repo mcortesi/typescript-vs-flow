@@ -1,24 +1,30 @@
 #### React support
 
-  Parece ser que TS solia tener problemas con JSX pero ya no mas ->https://www.typescriptlang.org/docs/handbook/jsx.html
+  Parece ser que TS solia tener problemas con JSX pero ya no mas -> https://www.typescriptlang.org/docs/handbook/jsx.html
 
 #### Using it with redux/reducers
 
+  - FLOW
+
+  Seal Objects
+  https://github.com/facebook/flow/issues/2314 pueden ser utiles al definir los reducers
+
+  - TS
+
   Esto? https://github.com/mhoyer/redux-typed-ducks/blob/master/spec/index.spec.ts
-  No termino de entender bien cual es el problema con los ducks, mas alla de tener una interfaz
-  generica...
 
 #### Support for third party libraries (declarations files)
 
 
 #### Community size
 
-  \# of open issues in github
+  ###### Stars
     - TS:   15000 stars
     - FLOW:  8000 stars
 
-  TS:   1269
-  FLOW: 732
+  ###### \# of open issues in github
+    - TS:   1269
+    - FLOW: 732
 
 #### Using it with Immutable and Immutable Records
 
