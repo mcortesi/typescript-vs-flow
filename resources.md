@@ -10,7 +10,13 @@
 
 ### Typescript
 
- * [Talk: What's new in typescript (2016)](https://channel9.msdn.com/Events/Build/2016/B881) - An intro to typescript
+ * [Talk: What's new in typescript (2016)](https://channel9.msdn.com/Events/Build/2016/B881)
+   * Really good!
+   * Intro to typescript (first 10mins)
+   * Example with Angular 2.0
+   * Example with React & Webpack
+   * Example with node & express
+   * Example using typings & jsdocs with normal JS (with VSCode)
  
 ### Flow
 
