@@ -23,7 +23,7 @@ Things to review:
 |  | Typescript |  Flow |
 | --- | --- | --- |
 | Github :star: | 15k | 8k |
-| Githuf :fork: | 2.000 | 600 |
+| Githuf forks | 2.000 | 600 |
 | Compiler Lang | typescript | ocaml |
 | Code Frequency | [very active](https://github.com/Microsoft/TypeScript/graphs/code-frequency) | [not so active](https://github.com/facebook/flow/graphs/code-frequency) |
 | npm downloads| 2 million | 130k |
@@ -42,7 +42,26 @@ While for flow, you have a few plugins in atom and webstorm is adding support fo
 
 ### React support
 
-  Parece ser que TS solia tener problemas con JSX pero ya no mas -> https://www.typescriptlang.org/docs/handbook/jsx.html
+**Flow** has native support for React within the project. and React is coded using flow. So a really good experience is to be expected when working with React. *React PropTypes* are coded **into the typesystem**.
+
+**Typescript** now support `.tsx` files (typescript jsx). When using typescript, you don't specify proptypes, instead you use typescript types to define your properties. For example:
+
+```typescript
+import * as React from "react";
+
+export interface HelloProps { compiler: string; framework: string; }
+
+export class Hello extends React.Component<HelloProps, {}> {
+    render() {
+        return <h1>Hello from {this.props.compiler} and {this.props.framework}!</h1>;
+    }
+}
+```
+
+A tutorial for react in typescript: https://www.typescriptlang.org/docs/handbook/jsx.html
+
+For context types, read this [issue in facebook/react](https://github.com/facebook/react/issues/6525). It's interesting to note the *facebook is phasing out propTypes in favor of static analysis*.. Also, [How to use React contextTypes in Typescript 1.6?](https://github.com/Microsoft/TypeScript/issues/4785)
+
 
 ### Typing redux/reducers/action creators
 
