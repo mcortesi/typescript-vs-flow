@@ -4,6 +4,8 @@ Things to review:
 
  * Community Size
  * Project liveness (issue count, progress metrics, something)
+ * Editor Support
+ * Node Support
  * React Support
  * Typing redux/reducers/action creators
  * Typing immutable and immutable records
