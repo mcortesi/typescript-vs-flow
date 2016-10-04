@@ -1,5 +1,7 @@
 // @flow
 
+import myPng from './../img/60x60.png';
+
 import * as Immutable from 'immutable';
 import React from 'react'
 import { connect } from 'react-redux'
@@ -15,6 +17,7 @@ function Todos({ todos, addTodo, deleteTodo } : TodoProps ){
   return (
     <div>
       <h1>Todos</h1>
+      <img src={myPng}/>
       <NewTodo onChange={e => {
         const target : EventTarget = e.target;
 
