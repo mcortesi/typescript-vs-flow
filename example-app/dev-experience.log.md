@@ -7,7 +7,10 @@ Just install flow globally `npm install -g flow-bin`
 
 ### 2. IDE
 
-I'm using atom, adding the flow plugin was easy, just `apm install ide-flow`, works well but at the moment the autocomplete feature is not working
+I'm using atom, adding the flow plugin was easy, just `apm install ide-flow`, works well but..
+
+- at the moment the autocomplete feature is not working
+- it freezes and stop showing error descriptions
 
 ### 2. First file conversion
 
