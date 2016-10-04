@@ -1,6 +1,6 @@
 var path = require("path");
 module.exports = {
-  entry: './components/app.js',
+  entry: './src/components/app.js',
   output: {
     path: path.resolve(__dirname, "build"),
     publicPath: "/",
