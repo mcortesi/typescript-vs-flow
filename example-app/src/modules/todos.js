@@ -2,7 +2,10 @@
 import * as Immutable from 'immutable';
 //const Immutable = require('immutable');
 
-type TodoAction = {
+export type AddTodoAD = (x: string) => void
+export type DeleteTodoAD = (x: number) => void
+
+export type TodoAction = {
   type: string,
   todo: ?string,
   index: ?number

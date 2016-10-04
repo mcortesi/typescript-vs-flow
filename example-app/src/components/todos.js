@@ -1,14 +1,17 @@
 // @flow
 
+import * as Immutable from 'immutable';
 import React from 'react'
 import { connect } from 'react-redux'
 
 import NewTodo from './NewTodo'
 import { addTodo, deleteTodo } from '../modules/todos'
 
+import type { AddTodoAD, DeleteTodoAD } from '../modules/todos';
 
+type TodoProps = { todos: Immutable.List<string> , addTodo : AddTodoAD, deleteTodo: DeleteTodoAD }
 
-function Todos({todos, dispatch}){
+function Todos({ todos, addTodo, deleteTodo } : TodoProps ){
   return (
     <div>
       <h1>Todos</h1>
@@ -16,22 +19,22 @@ function Todos({todos, dispatch}){
         const target : EventTarget = e.target;
 
         if(e.keyCode == 13 && target instanceof HTMLInputElement){
-         dispatch(addTodo(target.value));
+         addTodo(target.value);
          target.value = '';
         }
 
       }}/>
       {todos.map((todo, index) => <p key={index}>{todo} <button onClick={e => {
-        dispatch(deleteTodo(index))
+        deleteTodo(index)
       }}>X</button></p>)}
     </div>
   )
 }
 
-function mapStateToProps(todos) {
+function mapStateToProps(todos : Immutable.List<string>) {
   return {
     todos
   }
 }
 
-export default connect(mapStateToProps)(Todos)
+export default connect(mapStateToProps, { addTodo, deleteTodo })(Todos)
