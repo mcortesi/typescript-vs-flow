@@ -15,15 +15,21 @@ Resulto importante elegir bien el lugar por el cual empezamos, demasiadas depend
 
 ##### Refactor obligado
 
-Al ser un lenguaje dinamico nos vamos a encontrar con cosas que van a necesitar ser refactorizadas para beneficiarse de los tipos de Flow, reutilizacion de variables, variables agregadas a objetos dinamicamente, si usabas clases tenes que definir las properties
+Al ser un lenguaje dinamico nos vamos a encontrar con cosas que van a necesitar ser refactorizadas para beneficiarse de los tipos de Flow
+
+- reutilizacion de variables
+- variables agregadas a objetos dinamicamente
+- las clases tienen que definir el tipo de sus properties
 
 ##### Primeras alegrias
 
-Una vez pensado los tipos y agregados algunos de estos, es muy probable que encontremos errores en nuestro codigo, en Automate por ej: nos dimos cuenta que los pipes de procesamiento de mentions no siempre reciben el mismo "tipo" de Mention
+Una vez pensado los tipos y agregados algunos de estos, es muy probable que encontremos errores en nuestro codigo
+
+- en Automate nos dimos cuenta que los pipes de procesamiento de mentions no siempre reciben el mismo "tipo" de Mention
 
 ##### Usar el WEAK mode
 
-Flow nos permite un modo mas laxo, valida cosas basicas como posibilidad de undefined o null, podemos empezar a tipar nuestros archivos usando el modo weak, y cuando estamos conformes con la cantidad de tipos agregados y mas seguros de lo que estamos haciendo ir por todo.
+Flow nos permite un modo mas laxo, este valida cosas basicas como posibilidad de undefined o null, de esta forma podemos empezar a tipar nuestros archivos usando el modo weak, y cuando estamos conformes con la cantidad de tipos agregados y mas seguros de lo que estamos haciendo cambiar al modo default.
 
 ##### Plugins e IDE
 
