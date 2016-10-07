@@ -45,6 +45,5 @@ Hoy en dia ya podemos tener codigo tipado en Automate e ir agregandolo paulatina
 
 ##### Realizar pruebas
 
-Siempre que vayan tipando realizan pruebas de que flow
-entiende lo que estan haciendo, cambien el return type
-de una funcion para ver que putee, etc.
+Siempre que vayan tipando realizan pruebas de que flow entiende lo que estan haciendo, cambien el return type de una funcion para ver que putee, etc.
+Pueden probar aca -> https://flowtype.org/try/
