@@ -4,9 +4,12 @@
     "allowJs": true,
     "target": "es5",
     "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "jsx": "react",
+    "strictNullChecks": true,
+    "noImplicitAny": false
   },
   "include": [
-    "./src"
+    "./src/**/*"
   ]
 }
